@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/valtat/FahToCel.git'
+                git branch: 'main', url: 'https://github.com/valtat/FahToCel.git'
             }
         }
         stage('Build Docker Image') {
